@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6064227226665746336
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6064227226665746342}
+  - component: {fileID: 6064227226665746343}
+  m_Layer: 0
+  m_Name: WaveManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6064227226665746342
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6064227226665746336}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.1562064, y: 2.6880476, z: 681.6383}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6064227226665746343
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6064227226665746336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abb64e2832bd01a458c3ecdc291910fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  location: {fileID: 1950652417269439790, guid: 79cddd6d49912d841b0e7339a8f0f6fb, type: 3}
+  TextSphere: {fileID: 5285745533176078445, guid: 0f96d333069a469468f25f2d8d425427, type: 3}
+  CineCamera: {fileID: 8763627384969470691, guid: 97822d282b8b6394c8c5f3484be67264, type: 3}
+  planet: {fileID: 3781016033896240508, guid: 1c0a0766a9e78b140b9557f314f10ca5, type: 3}
+  audio: {fileID: 2679039432911535462, guid: 8f5f4482529adf241bcdb317bf750022, type: 3}
+  Planet0: {fileID: 21300000, guid: d438f9ccedb5f894d95595d3aec0a9a5, type: 3}
+  Planet1: {fileID: 21300000, guid: 078bbf35af5b93a4fa4b61c8cc1387f7, type: 3}
+  Planet2: {fileID: 21300000, guid: aea87a14d72886e4fbd77d86786e1dfa, type: 3}
+  Planet3: {fileID: 21300000, guid: d288678f62b37f14d94c2e32d053d6fc, type: 3}
+  Planet4: {fileID: 21300000, guid: d62fc415759cab0498ce8772112482b0, type: 3}
+  Planet5: {fileID: 21300000, guid: 850806a9f785f764ca4313ffccdcfb0a, type: 3}
+  Planet6: {fileID: 21300000, guid: c3d9d22aba7269c4ab96e8a0b47477cc, type: 3}
+  Planet7: {fileID: 21300000, guid: 4c6bd1965555d9741a1311c2388646cd, type: 3}
+  Planet8: {fileID: 21300000, guid: 13af6733f6204c8478a2e007cfa14e7f, type: 3}
+  Planet9: {fileID: 21300000, guid: b844a842016748140a232139ea682cda, type: 3}
+  textSphereCount: 0

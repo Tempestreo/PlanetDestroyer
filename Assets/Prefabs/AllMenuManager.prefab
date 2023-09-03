@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4449741170679781643
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4449741170679781641}
+  - component: {fileID: 4449741170679781640}
+  m_Layer: 0
+  m_Name: AllMenuManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4449741170679781641
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4449741170679781643}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 360, y: 570, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4449741170679781640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4449741170679781643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 140046dc292da534e9985a9d6ab9f612, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isStarted: 0
+  meteorite: {fileID: 6515259416582999392, guid: 175f9e96ed5486f41bc854ae04545a30, type: 3}
+  audio: {fileID: 2679039432911535462, guid: 8f5f4482529adf241bcdb317bf750022, type: 3}
+  WinLvlPnl: {fileID: 4557808903770558565, guid: a5655a03ac870bd47bef026d11116732, type: 3}
+  LoseLvlPnl: {fileID: 4634029338534944108, guid: d5083e0c98846ad479eec56f99ef8057, type: 3}
+  StartLvlPnl: {fileID: 3491839207352956881, guid: 448efa2fe22fa5045a64b70b72ceee32, type: 3}
+  LoseCanvas: {fileID: 8529002823117944357, guid: c26b86fda19751f49a2d0ff140d6c6a5, type: 3}
+  StartMenuCanvas: {fileID: 8168788869021550517, guid: 9b316b485e19dd5429cf8c331652306c, type: 3}
+  WinCanvas: {fileID: 6894536080597476422, guid: b9aa38d36b9fde74f94a17b2d1f8ac9d, type: 3}
+  AudioSettings: {fileID: 2989484982546566403, guid: 41b36c749b6eca1418d47649da0b256c, type: 3}
+  VideoSettings: {fileID: 6098050100849840714, guid: 9bc25e78a595e0d449db162fbf3f5740, type: 3}
+  MenuSettings: {fileID: 3437471351891509249, guid: 102e4b8e888b3d84194d4fcce1d05baf, type: 3}
+  MenuMain: {fileID: 6535365341474777042, guid: 046befce52401654c93071ca8a8402a3, type: 3}
+  LocalMenuManager: {fileID: 7216693176193482479, guid: 490a2aeec16a573489f019499b80a7ca, type: 3}
+  QualitySlide: {fileID: 6326555134378297004, guid: 0f299ffc40146524cae587fd678b0782, type: 3}
+  AudioSlider: {fileID: 537078691504626746, guid: 1502b6877a8b40340b21a6d5007f1289, type: 3}
