@@ -5,17 +5,20 @@ using UnityEngine;
 
 public class MeteoriteScript : MonoBehaviour
 {
+    #region components
     [SerializeField] GameObject vfxExplosion;
-    MenuManager scMenuManager;
     [SerializeField] TextMeshProUGUI txtSize;
     GameObject CineCamera;
-    [SerializeField] float speed;
-    internal float currentSpeed;
-    Rigidbody2D rb2d;
-    ParticleScript scParticle;
     WaveManager scWave;
-    Vector3 target; 
+    Rigidbody2D rb2d;
+    MenuManager scMenuManager;
+    ParticleScript scParticle;
+    #endregion
+
     public static MeteoriteScript instance;
+    internal float currentSpeed;
+    Vector3 target;
+    [SerializeField] float speed;
 
     private void Awake()
     {
@@ -27,11 +30,14 @@ public class MeteoriteScript : MonoBehaviour
 
     void Start()
     {
+        #region Component attachment
         scMenuManager = FindObjectOfType<MenuManager>();
         CineCamera = FindObjectOfType<CinemachineVirtualCamera>().gameObject;
         rb2d = GetComponent<Rigidbody2D>();
         scWave = FindObjectOfType<WaveManager>();
         scParticle = FindObjectOfType<ParticleScript>();
+        #endregion
+
         speed = 30;
         rb2d.velocity = Vector2.down * (this.transform.localScale.x * 2) * Time.deltaTime * speed;
         scParticle.UpdateSize();
@@ -61,6 +67,7 @@ public class MeteoriteScript : MonoBehaviour
 
         SizeText();
     }
+    //The KM size text of the meteorite
     void SizeText()
     {
         txtSize.transform.position = new Vector3(this.transform.position.x, this.transform.position.y - (1 * this.transform.localScale.x), this.transform.position.z);

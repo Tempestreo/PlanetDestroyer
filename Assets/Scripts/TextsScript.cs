@@ -34,6 +34,7 @@ public class TextsScript : MonoBehaviour
     {
         transform.Rotate(rotate * speed * Time.fixedDeltaTime);
     }
+    //attaching values into textsphere object
     void TextValues()
     {
         string[] Values = new string[12];

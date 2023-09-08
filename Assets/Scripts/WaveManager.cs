@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 public class WaveManager : MonoBehaviour
 {
 
+    #region Components
+
     MenuManager scMenuManager;
     MeteoriteScript scmeteorite;
     [SerializeField] GameObject location;
@@ -12,7 +14,7 @@ public class WaveManager : MonoBehaviour
     [SerializeField] GameObject CineCamera;
     [SerializeField] GameObject planet;
     [SerializeField] AudioSource audio;
-    internal int size;
+    #endregion
     #region Sprite Attachment
     [SerializeField] Sprite Planet0;
     [SerializeField] Sprite Planet1;
@@ -27,11 +29,15 @@ public class WaveManager : MonoBehaviour
     #endregion
 
     internal int textSphereCount = 0;
+    internal int size;
     int maxTextSphere;
     private void Start()
     {
+        #region Script attachment
+
         scMenuManager = FindObjectOfType<MenuManager>();
         scmeteorite = FindObjectOfType<MeteoriteScript>();
+        #endregion
         #region property Attachment by scene
         if (SceneManager.GetActiveScene().buildIndex == 0)
         {

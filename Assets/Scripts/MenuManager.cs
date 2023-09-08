@@ -10,6 +10,7 @@ public class MenuManager : MonoBehaviour
 {
     public bool isStarted;
 
+    #region components
 
     [SerializeField] AudioSource audio;
 
@@ -28,6 +29,9 @@ public class MenuManager : MonoBehaviour
 
     [SerializeField] Slider QualitySlide;
     [SerializeField] Slider AudioSlider;
+
+    #endregion
+
     private void Awake()
     {
         audio.volume = PlayerPrefs.GetFloat("MusicVolume");
